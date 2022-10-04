@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 120%;
+}
+
+.card {
+    background: #aeaeaed0;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 450px;
+    margin: 1em;
+}
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border-style: none;
+    height:2.5em;
+    width:2.5em;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input.search-bar {
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    padding: 0.5em;
+    background: #7c7c7c2b;
+    color: white;
+    font-size: 120%;
+}
+
+button:hover {
+    background: #7cb;
+    cursor:pointer;
+    transition:0.2 ease in out;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+.description
+{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+.weather .loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading::after{
+    visibility: visible;
+   
+    color:white;
+    top:0;
+    left:20px;
+    position: absolute;
+}
